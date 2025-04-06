@@ -1,0 +1,115 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="white"/>
+  
+  <!-- Title and labels -->
+  <text x="400" y="30" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Training and Validation Accuracy</text>
+  <text x="400" y="580" font-family="Arial" font-size="18" text-anchor="middle">Epochs</text>
+  <text x="20" y="300" font-family="Arial" font-size="18" text-anchor="middle" transform="rotate(-90, 20, 300)">Accuracy</text>
+  
+  <!-- Grid lines -->
+  <g stroke="#e0e0e0" stroke-width="1">
+    <!-- Horizontal grid lines -->
+    <line x1="50" y1="500" x2="750" y2="500"/>
+    <line x1="50" y1="400" x2="750" y2="400"/>
+    <line x1="50" y1="300" x2="750" y2="300"/>
+    <line x1="50" y1="200" x2="750" y2="200"/>
+    <line x1="50" y1="100" x2="750" y2="100"/>
+    
+    <!-- Vertical grid lines -->
+    <line x1="120" y1="100" x2="120" y2="500"/>
+    <line x1="190" y1="100" x2="190" y2="500"/>
+    <line x1="260" y1="100" x2="260" y2="500"/>
+    <line x1="330" y1="100" x2="330" y2="500"/>
+    <line x1="400" y1="100" x2="400" y2="500"/>
+    <line x1="470" y1="100" x2="470" y2="500"/>
+    <line x1="540" y1="100" x2="540" y2="500"/>
+    <line x1="610" y1="100" x2="610" y2="500"/>
+    <line x1="680" y1="100" x2="680" y2="500"/>
+  </g>
+  
+  <!-- Axes -->
+  <line x1="50" y1="500" x2="750" y2="500" stroke="black" stroke-width="2"/>
+  <line x1="50" y1="100" x2="50" y2="500" stroke="black" stroke-width="2"/>
+  
+  <!-- Axis labels -->
+  <g font-family="Arial" font-size="12" text-anchor="middle">
+    <!-- X-axis labels -->
+    <text x="50" y="520">0</text>
+    <text x="120" y="520">5</text>
+    <text x="190" y="520">10</text>
+    <text x="260" y="520">15</text>
+    <text x="330" y="520">20</text>
+    <text x="400" y="520">25</text>
+    <text x="470" y="520">30</text>
+    <text x="540" y="520">35</text>
+    <text x="610" y="520">40</text>
+    <text x="680" y="520">45</text>
+    <text x="750" y="520">50</text>
+    
+    <!-- Y-axis labels -->
+    <text x="35" y="500" text-anchor="end">0.5</text>
+    <text x="35" y="400" text-anchor="end">0.6</text>
+    <text x="35" y="300" text-anchor="end">0.7</text>
+    <text x="35" y="200" text-anchor="end">0.8</text>
+    <text x="35" y="100" text-anchor="end">0.9</text>
+  </g>
+  
+  <!-- Data lines -->
+  <!-- Training accuracy curve -->
+  <polyline points="
+    50,450
+    85,400
+    120,350
+    155,300
+    190,260
+    225,230
+    260,210
+    295,190
+    330,175
+    365,160
+    400,150
+    435,140
+    470,130
+    505,125
+    540,120
+    575,115
+    610,110
+    645,108
+    680,105
+    715,103
+    750,100
+  " fill="none" stroke="#1f77b4" stroke-width="3"/>
+  
+  <!-- Validation accuracy curve -->
+  <polyline points="
+    50,460
+    85,410
+    120,370
+    155,330
+    190,300
+    225,280
+    260,260
+    295,240
+    330,230
+    365,220
+    400,210
+    435,200
+    470,195
+    505,190
+    540,185
+    575,180
+    610,175
+    645,170
+    680,165
+    715,160
+    750,155
+  " fill="none" stroke="#ff7f0e" stroke-width="3" stroke-dasharray="5,5"/>
+  
+  <!-- Legend -->
+  <rect x="600" y="50" width="15" height="15" fill="none" stroke="#1f77b4" stroke-width="3"/>
+  <text x="625" y="62" font-family="Arial" font-size="14" text-anchor="start">Training Accuracy</text>
+  
+  <rect x="600" y="75" width="15" height="15" fill="none" stroke="#ff7f0e" stroke-width="3" stroke-dasharray="5,5"/>
+  <text x="625" y="87" font-family="Arial" font-size="14" text-anchor="start">Validation Accuracy</text>
+</svg>

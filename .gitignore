@@ -1,0 +1,74 @@
+# Virtual Environment
+venv/
+env/
+.env
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Data files (large datasets should not be committed to git)
+data/ASVspoof2019*/
+data/*.wav
+*.wav
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Local configuration
+config.local.py
+.env.local
+
+# Potentially sensitive information
+*_credentials.json
+*_key.json
+*.pem
+*.key
+
+# Assessment files (should not be included in GitHub)
+*_Assessment.pdf
+*_assessment.pdf
+*_Take-Home_Assessment.pdf
+
+# Personal information
+*OneDrive*
+
+# Large dataset files
+data/ASVspoof*/
+data/*.zip
+data/*.tar.gz
+
+# Model checkpoints (can be large)
+*.pt
+*.pth
+*.h5
+checkpoints/
+
+# Credentials and sensitive information
+*credentials*
+*api_key*
+*secret*
+.env
